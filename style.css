@@ -73,21 +73,25 @@
     padding-right: 35px; /* Leave space for the icon */
     appearance: none;    /* Hide default dropdown arrow */
 }
-
-
-
-
-/* Align Download button to the right */
 .form-row button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    align-self: flex-end;  /* Right-align within the flex column */
-}
-      .form-row button:hover {
-    background-color: #007BFF;  /* Blue on hover */
-}
+     padding: 10px 20px;
+     background-color: #007bff;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 16px;
+     width: auto; 
+     transition: background-color 0.3s, transform 0.2s;
+ }
+ 
+ .form-row button:hover {
+     background-color: #0056b3;
+     transform: translateY(-2px); /* Subtle lift effect */
+ }
+ 
+ .form-row button:active {
+     transform: translateY(1px); /* Press effect */
+ }
+
+
